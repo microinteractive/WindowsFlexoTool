@@ -16,5 +16,17 @@ namespace WindowsFlexoTool
         {
             InitializeComponent();
         }
+
+        private void zamknij_program(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        
+        private void onLoad_program(object sender, EventArgs e)
+        {
+            string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            this.Text = "Windows Flexo Tool v" + version;
+            toastNotificationsManager1.ShowNotification(toastNotificationsManager1.Notifications[0]);
+        }
     }
 }

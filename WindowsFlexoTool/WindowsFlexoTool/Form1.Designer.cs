@@ -42,29 +42,29 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.odpadTB = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.aniloxTB = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.zalanieTB = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pokrycieTB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.szerokoscTB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nakladTB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Top_panel = new System.Windows.Forms.Panel();
@@ -217,7 +217,7 @@
             // 
             this.panel9.Controls.Add(this.radioButton5);
             this.panel9.Controls.Add(this.radioButton4);
-            this.panel9.Controls.Add(this.textBox6);
+            this.panel9.Controls.Add(this.odpadTB);
             this.panel9.Controls.Add(this.label11);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 365);
@@ -229,11 +229,11 @@
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Checked = true;
-            this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.radioButton5.Location = new System.Drawing.Point(268, 42);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(44, 24);
+            this.radioButton5.Size = new System.Drawing.Size(48, 25);
             this.radioButton5.TabIndex = 5;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "%";
@@ -242,23 +242,25 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.radioButton4.Location = new System.Drawing.Point(219, 42);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(43, 24);
+            this.radioButton4.Size = new System.Drawing.Size(47, 25);
             this.radioButton4.TabIndex = 4;
             this.radioButton4.Text = "m";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // odpadTB
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(3, 32);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(210, 38);
-            this.textBox6.TabIndex = 0;
+            this.odpadTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.odpadTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odpadTB.Location = new System.Drawing.Point(3, 32);
+            this.odpadTB.Name = "odpadTB";
+            this.odpadTB.Size = new System.Drawing.Size(210, 38);
+            this.odpadTB.TabIndex = 0;
+            this.odpadTB.Text = "0.5";
+            this.odpadTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.odpadTB_KeyPress);
             // 
             // label11
             // 
@@ -272,7 +274,7 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.textBox5);
+            this.panel8.Controls.Add(this.aniloxTB);
             this.panel8.Controls.Add(this.label9);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 292);
@@ -290,14 +292,16 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "cm3/m2";
             // 
-            // textBox5
+            // aniloxTB
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(3, 32);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(210, 38);
-            this.textBox5.TabIndex = 0;
+            this.aniloxTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.aniloxTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.aniloxTB.Location = new System.Drawing.Point(3, 32);
+            this.aniloxTB.Name = "aniloxTB";
+            this.aniloxTB.Size = new System.Drawing.Size(210, 38);
+            this.aniloxTB.TabIndex = 0;
+            this.aniloxTB.Text = "10.0";
+            this.aniloxTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aniloxTB_KeyPress);
             // 
             // label9
             // 
@@ -311,7 +315,7 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.zalanieTB);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 219);
@@ -329,14 +333,16 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "kg";
             // 
-            // textBox4
+            // zalanieTB
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(3, 32);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(210, 38);
-            this.textBox4.TabIndex = 0;
+            this.zalanieTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.zalanieTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.zalanieTB.Location = new System.Drawing.Point(3, 32);
+            this.zalanieTB.Name = "zalanieTB";
+            this.zalanieTB.Size = new System.Drawing.Size(210, 38);
+            this.zalanieTB.TabIndex = 0;
+            this.zalanieTB.Text = "3.0";
+            this.zalanieTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.zalanieTB_KeyPress);
             // 
             // label7
             // 
@@ -350,7 +356,7 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.pokrycieTB);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 146);
@@ -368,14 +374,15 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "%";
             // 
-            // textBox3
+            // pokrycieTB
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(3, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(210, 38);
-            this.textBox3.TabIndex = 0;
+            this.pokrycieTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pokrycieTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pokrycieTB.Location = new System.Drawing.Point(3, 32);
+            this.pokrycieTB.Name = "pokrycieTB";
+            this.pokrycieTB.Size = new System.Drawing.Size(210, 38);
+            this.pokrycieTB.TabIndex = 0;
+            this.pokrycieTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pokrycieTB_KeyPress);
             // 
             // label5
             // 
@@ -391,7 +398,7 @@
             this.panel5.Controls.Add(this.radioButton3);
             this.panel5.Controls.Add(this.radioButton2);
             this.panel5.Controls.Add(this.radioButton1);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.szerokoscTB);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 73);
@@ -402,11 +409,11 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.radioButton3.Location = new System.Drawing.Point(340, 42);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(43, 24);
+            this.radioButton3.Size = new System.Drawing.Size(47, 25);
             this.radioButton3.TabIndex = 5;
             this.radioButton3.Text = "m";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -414,11 +421,11 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.radioButton2.Location = new System.Drawing.Point(219, 42);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(57, 24);
+            this.radioButton2.Size = new System.Drawing.Size(61, 25);
             this.radioButton2.TabIndex = 4;
             this.radioButton2.Text = "mm";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -427,24 +434,25 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.radioButton1.Location = new System.Drawing.Point(282, 42);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(52, 24);
+            this.radioButton1.Size = new System.Drawing.Size(56, 25);
             this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "cm";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // szerokoscTB
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(3, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 38);
-            this.textBox2.TabIndex = 0;
+            this.szerokoscTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.szerokoscTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.szerokoscTB.Location = new System.Drawing.Point(3, 32);
+            this.szerokoscTB.Name = "szerokoscTB";
+            this.szerokoscTB.Size = new System.Drawing.Size(210, 38);
+            this.szerokoscTB.TabIndex = 0;
+            this.szerokoscTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.szerokoscTB_KeyPress);
             // 
             // label4
             // 
@@ -458,7 +466,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.nakladTB);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -476,14 +484,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "m";
             // 
-            // textBox1
+            // nakladTB
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(3, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 38);
-            this.textBox1.TabIndex = 0;
+            this.nakladTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nakladTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nakladTB.Location = new System.Drawing.Point(3, 32);
+            this.nakladTB.Name = "nakladTB";
+            this.nakladTB.Size = new System.Drawing.Size(210, 38);
+            this.nakladTB.TabIndex = 0;
+            this.nakladTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nakladTB_KeyPress);
             // 
             // label2
             // 
@@ -568,25 +577,25 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nakladTB;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox odpadTB;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox aniloxTB;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox zalanieTB;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox pokrycieTB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox szerokoscTB;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
